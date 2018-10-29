@@ -1,0 +1,113 @@
+body{
+	margin-top:calc(25% - 25px);
+	margin-left:calc(50% - 100px);
+	background-color: #4d1919;
+}
+.redbox, .greenbox, .graybox, .yellowbox, .bluebox{
+	width:50px;
+	height:50px;
+	border-radius: 5px;
+	position:relative;
+
+}
+.redbox, .greenbox, .graybox, .bluebox{
+	margin-right:5px;
+
+}
+.boxes_group{
+	width:220px;
+	/*height:50px;*/
+	/*position: center center;*/
+	display: flex;
+	flex-wrap: wrap;
+
+
+}
+.redbox{
+	
+	background: red;
+	animation: animate_red 5s infinite;
+	
+}
+.greenbox{
+
+	background: green;
+	animation: animate_green 5s infinite;
+}
+.graybox{
+
+	background: gray;	
+	animation: animate_gray 5s infinite;
+}
+.yellowbox{	
+	margin-top: 5px;	
+	background: yellow;	
+	animation: animate_yellow 5s infinite;
+}
+.bluebox{	
+
+	background: blue;
+	animation: animate_blue 5s infinite;
+}
+@keyframes animate_yellow{
+	0% {
+		bottom:0px;
+		
+	}
+	100%{
+		bottom:110px;
+	}
+	
+}
+@keyframes animate_red{
+	0% {
+		bottom:55px;
+		
+	}
+	50%{
+		left:55px;
+	
+	}
+	100%{
+		top:55px;
+		
+	}
+	
+}
+/*@keyframes animate_green{
+	0% {
+		top:55px;
+		
+	}
+	50%{
+		left:55px;
+	
+	}
+	100%{
+		bottom:55px;
+		
+	}
+	
+}
+@keyframes animate_blue{
+	0% {
+		bottom:55px;
+		
+	}
+	50%{
+		left:55px;
+	
+	}
+	100%{
+		top:55px;
+		
+	}
+	
+}
+@keyframes animate_gray{	
+	100%{
+		top:55px;
+		
+	}*/
+
+
